@@ -1,33 +1,93 @@
-h1 {
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    background-color: rgb(5, 197, 255);
-    color: white;
-    padding: 25px;
+
+#header {
+  text-align: center;
+  background-color: rgb(62, 60, 63);
+  color: white;
+  margin: 0px auto;
+  padding: 25px;
+  background-image: linear-gradient(to left, rgb(0, 47, 255), skyblue);
+
 }
 
-.input-group-rounded .input-group-field {
-    border-radius: 5000px 0 0 5000px;
-    padding-left: 1rem;
-  }
-  
-  .input-group-rounded .input-group-button .button {
-    border-radius: 0 5000px 5000px 0;
-    font-size: 0.8rem;
-  }
+#search-area {
+  width:20%;
+  padding-left: 20px;
+  margin-right: 5%;
+}
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px)
+button {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px)
+#clear {
+  background-color: yellowgreen;
+  color: black;
+}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px)
+input {
+  width: 100%;
+  /* TODO - increase height */
+}
 
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px)
+#search-current{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
 
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px)
+#current-weather{
+  width: 100%;
+  background-image: linear-gradient(to bottom, white);
+  height: 300px;
+  margin-bottom: 2.5%;
+  border-radius: 1em;
+  font-size: 20px;
+}
+
+#cityname, #img_home, #date{
+  display: inline;
+}
+
+#forecast{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#uvi, #uvi-display-number{
+  display: inline;
+}
+
+#uvi-display-number{
+  padding: 3px 5px;
+  border-radius: 0.5em;
+}
+
+#all-weather-cards{
+  display:inline;
+  width: 70%;
+  margin-right:20px;
+}
+
+#forecast .card-body{
+  background-image: linear-gradient(to bottom, rgb(0, 47, 255), rgb(0, 255, 255));
+  border-radius: 1em;
+  color: white;
+}
+
+button{
+  font-weight:bold;
+  border-radius: 0.5em;
+  color:white;
+  background-color:rgb(102, 165, 233);
+}
+
+input{
+  border-radius: 0.5em;
+}
+
+div .card {
+  border-radius: 1em;
+}
